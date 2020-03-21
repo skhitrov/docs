@@ -40,3 +40,6 @@ x - make executable
 stdout - standard output. Flow of data, that is openned by the system at the moment when it starts. It is designed for data, that is an output of the process
 stdin - standard input. input from keyboard to the file. data flow that opened by the system for each process when the process starts
 channel - indivisible pare of descriptors (in/out) connected together. The data written to input descriptor, trasnffered immidiately to output descriptor
+окружение - набор данных, приписанных системой процессу. Процесс может пользоваться окружением для изменения информации. Окружение представлено в виде
+переменных окружения. При fork() окружение родительского процесса наследуется.
+внутри двойных кавычек действует подстановка значений переменным
